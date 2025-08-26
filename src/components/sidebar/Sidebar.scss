@@ -1,0 +1,98 @@
+.main {
+  display: flex;
+  height: 100vh;
+}
+
+.sidebar {
+  width: 15%;
+  min-width: 220px;
+  background: linear-gradient(to bottom, black, blue);
+  padding: 20px;
+  color: white;
+  
+  h2 {
+    margin-bottom: 20px;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    
+    input {
+      padding: 8px;
+      border-radius: 6px;
+      border: none;
+      outline: none;
+    }
+    
+    button {
+      padding: 8px;
+      border: none;
+      background: #fff;
+      color: #000;
+      border-radius: 6px;
+      cursor: pointer;
+      transition: 0.3s;
+      
+      &:hover {
+        background: #ccc;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+.result {
+  flex: 1;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  background: linear-gradient(to right, rgb(1, 249, 178), rgb(157, 0, 255));
+}
+
+.empty {
+  font-size: 20px;
+  color: #555;
+}
+.card {
+  justify-content: center;
+  text-align: center;
+  width: 200px;
+  height: fit-content;
+  padding: 15px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.2);
+  
+  .avatar {
+    margin: 0 auto;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background: #ddd;
+    margin-bottom: 10px;
+  }
+
+  h3 {
+    margin: 5px 0;
+  }
+
+  .actions {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+
+    button {
+      padding: 5px 8px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+}
